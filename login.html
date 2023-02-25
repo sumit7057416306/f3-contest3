@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="left">
+            <a href="index.html"> Teacher's Portal </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html"> Sign Up </a> </li>
+                <li> <a href="login.html"> Login </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <h2 id="heading" style="color: chartreuse;"> <b><i>Teacher's Login </i></b> </h2>
+    <form id="login">
+
+        <input type="email" name="email id" id="email" value="" style="caret-color: brown;" placeholder="Email">
+
+        <input type="password" name="pass" id="password" value=""style="caret-color: brown;" placeholder="Password">
+
+        <div class="hide" id="alert-msg"> </div>
+
+        <button type="submit" id="submit" formnovalidate="formnovalidate"> Login </button>
+
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>

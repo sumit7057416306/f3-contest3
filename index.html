@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teachers Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+ 
+    <div class="navbar">
+        <div class="left">
+            <a href="index.html"> Teacher's Portal </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html"> Sign Up </a> </li>
+                <li> <a href="login.html"> Login </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <h2 id="heading" style="color: chartreuse; text-shadow: black;"> <b><i>Teacher's Signup </i></b> </h2>
+    <form id="signup">
+        
+        <input type="text" name="name" id="Name" value="" style="caret-color: brown;" placeholder="Enter Full Name">
+
+        <input type="email" name="email id" id="Email" value="" style="caret-color: brown;" placeholder="Email" novalidate/>
+
+        <input type="password" name="pass" id="password" value="" style="caret-color: brown;" placeholder="Password">
+
+        <input type="password" name="confirm pass" id="confPassword" value=""style="caret-color: brown;" placeholder="Confirm Password">
+
+        <div class="hide" id="alert"> </div>
+
+        <button type="submit" id="submit" formnovalidate="formnovalidate"> Signup </button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

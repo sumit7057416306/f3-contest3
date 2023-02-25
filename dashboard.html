@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+ 
+     <div class="navbar">
+        <div class="left">
+            <a href="index.html"> Teacher's Portal </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li> <a href="index.html"> Sign Up </a> </li>
+                <li> <a href="login.html"> Login </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 id="heading" style="color: chartreuse;" > <b><i> Teacher's Dashboard </i></b></h2>
+    <p class="para"> <b>Welcome back:- </b><span id="username">  </span> </p>
+    <p class="para"> <b>Your Email ID:-</b> <span id="useremail">  </span> </p>
+
+    
+    <h2 id="heading" style="color: darkred;"> Change Password </h2>
+    <form id="change-pass">
+
+        <input type="password" name="pass" id="oldpass" value="" style="caret-color: brown;" placeholder="Old Password">
+
+        <input type="password" name="pass" id="newpass" value="" style="caret-color: brown;" placeholder="New Password">
+
+        <input type="password" name="pass" id="conf-newpass" value="" style="caret-color: brown;" placeholder="Confirm New Password">
+
+        <div class="hide" id="alert"> hiii </div>
+
+        <button type="submit" id="submit" formnovalidate="formnovalidate"> Change </button>
+
+    </form>
+
+    <button id="logout"> Logout </button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
