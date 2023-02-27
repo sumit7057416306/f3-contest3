@@ -8,18 +8,18 @@ loginform.addEventListener('submit', function(e)
 {
     e.preventDefault()
 
-    let email = document.getElementById("email").value;
-    let pwd = document.getElementById("password").value;
+    let email = document.getElementById("Email").value;
+    let pass = document.getElementById("password").value;
 
-    let alert = document.getElementById("alert")
+    let alert = document.getElementById("alert-msg")
 
-    const user = users.find(user => user.email === email && user.pwd === pwd)
+    const user = users.find(user => user.email === email && user.pass === pass)
     console.log(user);
 
     if(email === "")
     {
         alert.classList.remove("hide");
-        alert.innerHTML = "Email cannot be EMPTY!"
+        alert.innerHTML = "Email Required"
     }
     else if(email.indexOf('@') == -1)
     {
@@ -27,10 +27,10 @@ loginform.addEventListener('submit', function(e)
         alert.classList.remove("hide");
         alert.innerHTML = "Email should contain an '@'"
     }
-    else if(pwd === "")
+    else if(pass === "")
     {
         alert.classList.remove("hide");
-        alert.innerHTML = "Password cannot be EMPTY!"
+        alert.innerHTML = "Password Required"
     }
     else if(!user)
     {
